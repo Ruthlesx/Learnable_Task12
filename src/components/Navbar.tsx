@@ -17,7 +17,7 @@ const Navbar = () => {
     if (!user) return null;
  
   return (
-    <nav className="p-4 bg-gray-800 text-white justify-between">
+    <nav className="navbar p-4 w-screen bg-teal-200 text-white justify-between">
        <div>
           <Link to="/dashboard" className="mr-4">Dashboard</Link>
           <Link to="/profile" className="mr-4">Profile</Link>
@@ -25,8 +25,8 @@ const Navbar = () => {
        </div>
 
        <div>
-         <span className="mr-4">{user.username} ({user.role})</span>
-         <button onClick={handleLogout}>Logout</button>
+         <span className="mr-4 font-mono text-black">{user.username} ({user.role})</span>
+         <button className="font-mono bg-stone-400 p-1 w- text-black" onClick={handleLogout}>Logout</button>
         </div> 
     </nav>
   )

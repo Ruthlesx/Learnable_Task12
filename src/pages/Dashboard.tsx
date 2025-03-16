@@ -1,29 +1,36 @@
 import React from 'react'
 import { useAuth } from "../context/AuthContext"
+import AdminCard from '../components/AdminCard'
 
 const Dashboard = () => {
 
     const { user } = useAuth()
 
   return (
-    <>
-    <div className=' p-4 bg-black'>
-        <h1 className='text-2xl '>Dashboard</h1>
+    <div className="">
+    <div className=''>
+      <div className='dashboard-container'>
+        <h1 className=' flex dashboard-header flex-start text-1xl m-5 '>Dashboard</h1>
+        </div>
+
         {user?.role === "admin" && <>
-        <h2>Welcome! You are an Admin</h2>
-        <p>Admin Controls Here</p></>}
+        <h2 className='p-4'>Welcome! You are an Admin</h2>
+        <p>Admin Controls Here</p>
+
+        <AdminCard />
+        </>}
 
         {user?.role === "editor" && <>
-        <h2>Welcome! You are an Editor</h2>
+        <h2 className='p-4'>Welcome! You are an Editor</h2>
         <p>Control Editor Panel Here </p></>}
 
-        {user?.role === "viewer" && <p>Welcome! Viewer, Viewer Reports Here</p>}
+        {user?.role === "viewer" && <p className='p-4'>Welcome! Viewer, Viewer Reports Here</p>}
     </div>
 
 
     
 
-</>
+</div>
 
 
 

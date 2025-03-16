@@ -21,15 +21,19 @@ const Login = () => {
     };
 
   return (
-    <div className='p-4'>
-        <h1 className='text-xl mb-4'>Login</h1>
-        <input placeholder='Username' value={username} onChange={ (e) => setUsername(e.target.value)} className='p-2 border mr-2' />
-        <select value={role} onChange={(e) => setRole(e.target.value as "admin"| "editor" | "viewer")} className='p-2 border' >
+    <div className='p-4 '>
+        <h1 className=' mb-5 font-mono'>Login</h1>
+        <div className='h-40 w-lg p-14 bg-gray-900 border border-indigo-600 bg-teal '>
+
+        
+        <input placeholder='Username' value={username} onChange={ (e) => setUsername(e.target.value)} className='p-2 border rounded-xl mr-2' />
+        <select value={role} onChange={(e) => setRole(e.target.value as "admin"| "editor" | "viewer")} className='p-2 border rounded-xl' >
             <option className='text-black' value="admin">Admin</option>
             <option className='text-black' value="editor">Editor</option>
             <option className='text-black' value="viewer">Viewer</option>
         </select>
         <button onClick={handleLogin} className='p-2 bg-blue-500 text-white ml-2' disabled={!username.trim()}>Login</button>
+        </div>
     </div>
   );
 };
