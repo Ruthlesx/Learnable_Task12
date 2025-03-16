@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   return (
     <>
-    <div className='p-4 bg-white'>
+    <div className=' p-4 bg-black'>
         <h1 className='text-2xl '>Dashboard</h1>
         {user?.role === "admin" && <>
         <h2>Welcome! You are an Admin</h2>

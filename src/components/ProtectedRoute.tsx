@@ -17,7 +17,7 @@
     
     // Redirect to login if user is not authenticated
     if (!user) {
-      return <Navigate to="/login" state={{ from: location }} replace />;
+      return <Navigate to="/" state={{ from: location }} replace />;
     }
 
     // Redirect to dashboard if user does not have the required role

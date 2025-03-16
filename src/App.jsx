@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/settings" element={<ProtectedRoute requiredRole="admin"><Settings /></ProtectedRoute>} />
           <Route path="/" element={<Login />} />
 
-          <Route path="*" element={<Navigate to="/login" replace/> }/>
+          <Route path="*" element={<Navigate to="/" replace/> }/>
 
 
 
