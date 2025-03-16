@@ -22,8 +22,7 @@ const App = () => {
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute> } />
           <Route path="/profile" element={<ProtectedRoute><Profile/></ProtectedRoute>}></Route>
           <Route path="/settings" element={<ProtectedRoute requiredRole="admin"><Settings /></ProtectedRoute>} />
-          <Route path="/"  element={<h1>Home</h1>} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
 
           <Route path="*" element={<Navigate to="/login" replace/> }/>
 
