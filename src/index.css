@@ -47,6 +47,220 @@ h1 {
   width: 100%;
 }
 
+.container {
+  padding: 0px;
+}
+
+.profile-outer {
+  width: 1240px ;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left:-10px;
+  
+}
+
+.profile-container {
+width: 820px;
+height: 130p;
+display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+
+.profile {
+  width: 800px;
+ height: 110px;
+
+}
+
+.profile-header {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: brushscript;
+  display: flex;
+}
+
+.profile-box {
+  
+  width: 820px;
+  height: 350px;
+  margin-left: 14px;
+
+}
+
+
+.account {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+
+.username-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  width: 450px;
+}
+
+.username-input {
+  width: 250px;
+  margin-left: 5px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+.detail-container {
+  
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-container {
+  
+  margin: 10px;
+  width: 720px;
+}
+
+
+.others-container {
+margin: 10px;
+display: flex;
+flex-direction: row;
+padding: 5px;
+}
+
+.city-container {
+  width: 300px;
+  
+}
+
+.city-input {
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+.button-container {
+ 
+ margin-top: 15px;
+ padding: 10px;
+ display: flex;
+ flex-direction: row;
+}
+
+.update-btn {
+  width: 150px;
+  background: #000;
+  color: #fff;
+  height: 48px;
+
+}
+
+.change-btn {
+  margin-left: 9px;
+  width: 150px;
+  color: #fff;
+  height: 48px;
+}
+
+.settings-container {
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.settings-header {
+    display: flex;
+  flex-direction: column;
+  
+}
+
+.settings-header h1 {
+  font-family: brushscript;
+  font-size: 29px;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-self:flex-start ;
+
+}
+
+.settings-header p {
+  font-family: brushscript;
+  display: flex;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.settings-box {
+
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.system-settings {
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin: 10px;
+padding: 10px;
+}
+
+.general-settings-box {
+  
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+}
+
+.settings-input {
+  
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-input label {
+  display: flex;
+  align-self: flex-start;
+}
+
+.settings-input input {
+  border: lightgray solid 1px;
+  padding: 5px;
+  margin: 2px;
+  margin-top: 6px;
+  height: 25px;
+}
+
+.check-box {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.check-box p{
+  margin-left: 5px;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
