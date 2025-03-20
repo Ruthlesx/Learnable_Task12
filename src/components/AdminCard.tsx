@@ -2,9 +2,9 @@ import React from 'react'
 
 const AdminCard = () => {
   return (
-    <div className='flex flex-row'>
-    <div className='w-md bg-white m-4 mt-9 border p-4'>
-      <div className='h-40 bg-black border p-4'>
+    <div className='admin-card-container'>
+    <div className=''>
+      <div className='user-card h-40 bg-black border p-4'>
         <h2 className='flex flex-start font-bold '>User Management</h2>
         <p className=' flex '>Manage user accounts and permissions</p>
 
@@ -12,7 +12,7 @@ const AdminCard = () => {
       </div>
     </div>
 
-    <div className='w-md bg-white m-4 mt-9 border p-4'>
+    <div className='user-card w-md bg-white m-4 mt-9 border p-4'>
       <div className='h-40 bg-black border p-4'>
         <h2 className='flex flex-start font-bold '>System Settings</h2>
         <p className=' flex '> Configure System settings</p>
@@ -21,7 +21,7 @@ const AdminCard = () => {
       </div>
     </div>
 
-    <div className='w-md bg-white m-4 mt-9 border p-4'>
+    <div className='user-card w-md bg-white m-4 mt-9 border p-4'>
       <div className='h-40 bg-black border p-4'>
         <h2 className='flex flex-start font-bold '>Security</h2>
         <p className=' flex '>Manage security settings and logs</p>

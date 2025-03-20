@@ -7,7 +7,7 @@ const Settings: React.FC = () => {
     <div className='settings-container bg-stone-950 m-4 p-4 '>
 
     
-    <div className=' settings-header   p-2 bg-black'>
+    <div className=' settings-header p-2 bg-black'>
         <h1 className=''>Settings Page ( Admins Only) </h1>
         <p>Manage application settings. </p>
     </div>
@@ -23,8 +23,10 @@ const Settings: React.FC = () => {
       <div className='general-settings-box'>
         <h3>General Settings</h3>
 
+        <div className='general-settings-input'>
        <CustomInput label="System Name" placeholder='User Dashboard' />
        <CustomInput label="Default Language" placeholder="English"/>
+      </div>
 
         <div className='check-box'>
           <input type='checkbox'/>

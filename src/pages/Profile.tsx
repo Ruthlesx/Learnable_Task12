@@ -5,14 +5,13 @@ import NameInput from '../components/NameInput';
 
 const Profile = () => {
   return (
-    <div className='container'>
-    <div className='bg-slate-400 profile-outer '>
-    <div className='profile-container bg-white  p-2 m-4' >
-        <div className="profile  h-96 p-2 bg-black">
+    <div className='profile-container'>
+    <div className='bg-slate-400  '>
+    <div className=' bg-white  ' >
+        <div className="">
         <h1 className=' p-4 profile-header'>Profile Page</h1>
         <p className='flex flex-start ml-5'> Edit your profile details here.</p>
-    
-    </div>
+         </div>
     </div>
 
 
@@ -58,7 +57,7 @@ const Profile = () => {
 
           </div>
 
-         <CustomButton text1="Update Profile" text2="Change Password" />
+         <CustomButton  text1="Update Profile" text2="Change Password" />
           
 
         </div>

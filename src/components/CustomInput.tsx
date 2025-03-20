@@ -9,7 +9,7 @@ interface CustomInputProps {
 
 const CustomInput: React.FC<CustomInputProps> = ({ label, placeholder}) => {
   return (
-    <div className='settings-input'>
+    <div className='settings-input '>
     <label>{label}</label>
     <input
     type='text' 

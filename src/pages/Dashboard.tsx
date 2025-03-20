@@ -7,11 +7,11 @@ const Dashboard = () => {
     const { user } = useAuth()
 
   return (
-    <div className="">
+    <div className="dashboard-container">
     <div className=''>
-      <div className='dashboard-container'>
+      <div className=''>
         <h1 className=' flex dashboard-header flex-start text-1xl m-5 '>Dashboard</h1>
-        </div>
+      </div>
 
         {user?.role === "admin" && <>
         <h2 className='p-4'>Welcome! You are an Admin</h2>
