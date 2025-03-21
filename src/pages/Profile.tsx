@@ -18,7 +18,7 @@ const Profile = () => {
       <div>
         <div className='profile-box p-6 '>
           <div className='account-container flex flex-start '>
-          <h2 className='account text-black'>Account Information</h2>
+          <h2 className='account text-black'>Account Information:</h2>
           </div>
 
           <div className='flex flex-row '>
